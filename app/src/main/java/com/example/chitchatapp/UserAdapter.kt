@@ -13,8 +13,6 @@ import com.google.firebase.auth.FirebaseAuth
 
 class UserAdapter(val context: Context,val userList:ArrayList<User>): RecyclerView.Adapter<UserAdapter.userViewHolder>() {
 
-
-
    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): userViewHolder {
      val view:View=LayoutInflater.from(context).inflate(R.layout.user_layout,parent,false)
       return userViewHolder(view)

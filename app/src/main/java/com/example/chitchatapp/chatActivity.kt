@@ -49,7 +49,7 @@ class chatActivity : AppCompatActivity() {
 
         //adding data to recycler view
 
-        dbRef.child("chats").child(senderRoom!!).child("messages")
+        dbRef.child("chats").child(senderRoom!!).child("messages ")
             .addValueEventListener(object :ValueEventListener{
                 override fun onDataChange(snapshot: DataSnapshot) {
                     messageList.clear()
